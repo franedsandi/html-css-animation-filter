@@ -1,111 +1,134 @@
 /* ex 1 */
-.ex-1-square{
+.ex-1-square {
   transition: 2s;
 }
-.ex-1-square:hover{
+.ex-1-square:hover {
 background-color: red;
 }
+
+
 /* ex 2 */
-.ex-2-square{
+.ex-2-square {
   transition: 2s;
 }
-.ex-2-square:active{
+.ex-2-square:active {
   width: 100%;
 }
+
+
 /* ex 3 */
-.ex-3-square{
+.ex-3-square {
   transition: .5s;
 }
-.ex-3-square:hover{
+.ex-3-square:hover {
   border-radius: 50%;
 }
+
+
 /* ex 4 */
-.ex-4-square{
+.ex-4-square {
   transition: .5s;
 }
-.ex-4-square:hover{
+.ex-4-square:hover {
   opacity: 0;
 }
+
+
 /* ex 5 */
-.ex-5-square{
+.ex-5-square {
   transition: .5s;
 }
-.ex-5-square:hover{
+.ex-5-square:hover {
   transform: scale(2);
 }
-.ex-5-square:active{
+.ex-5-square:active {
   transform: scale(.3)
 }
+
+
 /* ex 6 */
-.ex-6-img:hover{
+.ex-6-img:hover {
   filter: grayscale(1);
 }
+
+
 /* ex 7 */
-.ex-7-img{
+.ex-7-img {
   transition: 1.5s;
 }
-.ex-7-img:hover{
+.ex-7-img:hover {
   filter: grayscale(1);
 }
+
+
 /* ex 8 */
-.ex-8-img{
+.ex-8-img {
   transition: 1.5s;
 }
-.ex-8-img:hover{
+.ex-8-img:hover {
   filter: sepia(.8) saturate(1);
   border-radius: 30px;
 }
+
+
 /* ex 9 */
-.ex-9-img{
+.ex-9-img {
   transition: 1.5s;
 }
-.ex-9-img:hover{
+.ex-9-img:hover {
   filter: sepia(.8) saturate(1);
   border-radius: 30px;
   transform: scale(1.5);
 }
+
+
 /* ex 10 */
-@keyframes girar {
-  0% {transform: rotate(1turn);}
-  
-}
-.ex-10-icon{
+.ex-10-icon {
   animation: girar .7s linear infinite;
 }
+@keyframes girar {
+  0% {transform: rotate(1turn);}
+}
+
+
 /* ex 11 */
+.ex-11-icon:hover {
+  animation: casigirar 2s linear infinite;
+}
 @keyframes casigirar {
   0% {transform: rotate(0);}
   80%{transform: rotate(340deg);}
   100%{transform: rotate(0) ;}
 }
-.ex-11-icon:hover{
-  animation: casigirar 2s linear infinite;
-}
+
+
 /* ex 12 */
-.ex-12-button:hover .ex-12-top-white{
+.ex-12-button:hover .ex-12-top-white {
   animation: movetop .7s linear infinite;
 }
-.ex-12-button:hover .ex-12-bottom-white{
+.ex-12-button:hover .ex-12-bottom-white {
   animation: movebot .7s linear infinite;
 }
-@keyframes movetop{
+@keyframes movetop {
   0% {left: 10%}
   50% {left: calc(100% - 60px);}
   100% {left: 10%}
 }
-@keyframes movebot{
+@keyframes movebot {
   0% {right: 10%}
   50% {right: calc(100% - 60px);}
   100% {right: 10%}
 }
+
+
 /* ex 13 */
-.ex-13-button:hover .ex-13-top-white{
+.ex-13-button:hover .ex-13-top-white {
   animation: top-full-move 1s linear infinite;
 }
-.ex-13-button:hover .ex-13-bottom-white{
+.ex-13-button:hover .ex-13-bottom-white {
   animation: bot-full-move 1s linear infinite;
 }
-@keyframes top-full-move{
+@keyframes top-full-move {
 0%{
   left: 10%;
   top:-10px
@@ -131,29 +154,29 @@ background-color: red;
   top:-10px
 }
 }
-@keyframes bot-full-move{
-  0%{
+@keyframes bot-full-move {
+0%{
     right: 10%;
     bottom:-10px
-  }
-  30%{
+}
+30%{
     right: calc(100% - 30px);
     bottom: -10px;
-  }
-  45%{
+}
+45%{
     right: calc(100% - 30px);
     bottom: 100%;
-  }
-  75%{
+}
+75%{
     right:0;
     bottom: 100%;
-  }
-  90%{
+}
+90%{
     right: -15px;
     bottom: -10px;
-  }
-  100%{
+}
+100%{
     right: 10%;
     bottom:-10px
-  }
+}
 }
