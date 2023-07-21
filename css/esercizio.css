@@ -99,3 +99,61 @@ background-color: red;
   100% {right: 10%}
 }
 /* ex 13 */
+.ex-13-button:hover .ex-13-top-white{
+  animation: top-full-move 1s linear infinite;
+}
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: bot-full-move 1s linear infinite;
+}
+@keyframes top-full-move{
+0%{
+  left: 10%;
+  top:-10px
+}
+30%{
+  left: calc(100% - 30px);
+  top: -10px;
+}
+45%{
+  left: calc(100% - 30px);
+  top: 100%;
+}
+75%{
+  left:0;
+  top: 100%;
+}
+90%{
+  left: -15px;
+  top: -10px;
+}
+100%{
+  left: 10%;
+  top:-10px
+}
+}
+@keyframes bot-full-move{
+  0%{
+    right: 10%;
+    bottom:-10px
+  }
+  30%{
+    right: calc(100% - 30px);
+    bottom: -10px;
+  }
+  45%{
+    right: calc(100% - 30px);
+    bottom: 100%;
+  }
+  75%{
+    right:0;
+    bottom: 100%;
+  }
+  90%{
+    right: -15px;
+    bottom: -10px;
+  }
+  100%{
+    right: 10%;
+    bottom:-10px
+  }
+}
