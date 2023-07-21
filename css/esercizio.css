@@ -65,10 +65,37 @@ background-color: red;
   transform: scale(1.5);
 }
 /* ex 10 */
-@keyframes spin {
+@keyframes girar {
   0% {transform: rotate(1turn);}
   
 }
 .ex-10-icon{
-  animation: spin .7s linear infinite;
+  animation: girar .7s linear infinite;
 }
+/* ex 11 */
+@keyframes casigirar {
+  0% {transform: rotate(0);}
+  80%{transform: rotate(340deg);}
+  100%{transform: rotate(0) ;}
+}
+.ex-11-icon:hover{
+  animation: casigirar 2s linear infinite;
+}
+/* ex 12 */
+.ex-12-button:hover .ex-12-top-white{
+  animation: movetop .7s linear infinite;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: movebot .7s linear infinite;
+}
+@keyframes movetop{
+  0% {left: 10%}
+  50% {left: calc(100% - 60px);}
+  100% {left: 10%}
+}
+@keyframes movebot{
+  0% {right: 10%}
+  50% {right: calc(100% - 60px);}
+  100% {right: 10%}
+}
+/* ex 13 */
