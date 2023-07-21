@@ -26,3 +26,49 @@ background-color: red;
 .ex-4-square:hover{
   opacity: 0;
 }
+/* ex 5 */
+.ex-5-square{
+  transition: .5s;
+}
+.ex-5-square:hover{
+  transform: scale(2);
+}
+.ex-5-square:active{
+  transform: scale(.3)
+}
+/* ex 6 */
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+/* ex 7 */
+.ex-7-img{
+  transition: 1.5s;
+}
+.ex-7-img:hover{
+  filter: grayscale(1);
+}
+/* ex 8 */
+.ex-8-img{
+  transition: 1.5s;
+}
+.ex-8-img:hover{
+  filter: sepia(.8) saturate(1);
+  border-radius: 30px;
+}
+/* ex 9 */
+.ex-9-img{
+  transition: 1.5s;
+}
+.ex-9-img:hover{
+  filter: sepia(.8) saturate(1);
+  border-radius: 30px;
+  transform: scale(1.5);
+}
+/* ex 10 */
+@keyframes spin {
+  0% {transform: rotate(1turn);}
+  
+}
+.ex-10-icon{
+  animation: spin .7s linear infinite;
+}
